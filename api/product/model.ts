@@ -22,11 +22,14 @@ const productSchema = new Schema({
     ref: "Category",
     required: true,
   },
-  salers_id: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
-    required: true
-  },
+
+  // a futuro se generara los Salers
+  // salers_id: {
+  //   type: Schema.Types.ObjectId,
+  //   ref: "User",
+  //   required: true
+  // },
+  
   image: {
     type: String,
     default: "",

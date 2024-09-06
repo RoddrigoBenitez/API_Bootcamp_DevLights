@@ -1,10 +1,12 @@
+import { ICategory } from "../category/types";
+
 export interface IProduct {
   _id: string | undefined;
-  last_name: string;
+  name: string;
   description: string;
-  stock: string;
-  price: string;
-  category: string;
+  stock: Number;
+  price: Number;
+  category: ICategory;
   image: string | undefined;
 }
 
